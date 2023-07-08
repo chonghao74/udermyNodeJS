@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import "../sass/basic.scss";
+
+
+body{
+    background-color: wheat;
+    margin:40px 20px 40px 20px;
+}
+
+.errtext{
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
