@@ -7,12 +7,54 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="" />
-    <link rel="icon" sizes="192x192" href="./icons/nodejs.png" />
-    <link rel="stylesheet" href="" />
+    <link rel="icon" sizes="192x192" href="/nodejs.png" />
+    <link rel="stylesheet" href="style/basic.css" />
     <title>NodeJSTest</title>
   </head>
   <body>
-    <label for="">Http Module Test</label>
+    <head>
+      <label for="">Http Module Test</label>
+    </head>
+    <main>
+      <br />
+      <label for="">Test form post, get</label>
+      <section>
+        <label for="">Web API - POST</label>
+        <form action="/login" method="post">
+          <div>
+            <label for="account">id</label>
+            <input type="text" id="account" name="at" required />
+          </div>
+          <div>
+            <label for="pd">password</label>
+            <input type="password" id="pd" name="pd" required />
+          </div>
+          <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+        <br />
+      </section>
+      <section>
+        <label for="">Web API - GET</label>
+        <form action="/login" method="GET">
+          <div>
+            <label for="gaccount">id</label>
+            <input type="text" id="gaccount" name="gat" required />
+          </div>
+          <div>
+            <label for="gpd">password</label>
+            <input type="password" id="gpd" name="gpd" required />
+          </div>
+          <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+        <br />
+      </section>
+    </main>
   </body>
   <script src="./js/basictest.js"></script>
   <noscript>
