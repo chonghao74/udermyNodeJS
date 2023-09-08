@@ -17,6 +17,17 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"));
 })
 
+//express redirect
+app.get("/toapple", (req, res) => {
+    res.redirect('https://www.apple.com/tw');
+});
+
+//express json
+app.get("/showjson", (req, res) => {
+    const data = { name: "Tim", age: 38 };
+    res.json(data);
+});
+
 app.post("/login", (req, res) => {
     console.log(req.body);
     let { at, pd } = req.body
